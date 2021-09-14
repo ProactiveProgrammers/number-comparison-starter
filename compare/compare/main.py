@@ -38,6 +38,7 @@ def get_largest_odd(first: int, second: int, third: int) -> Tuple[int, bool]:
     # form (answer, found_odd), fitting the function's signature
     return (0, False)
 
+
 @cli.command()
 def compare(
     first: int = typer.Option(...),
