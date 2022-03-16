@@ -41,4 +41,4 @@ writing/reflection.md:
 CountCommits --count 5
 
 # --> check that the main command produces the correct number of output lines
-CountCommandOutput --command "cd compare; poetry install; poetry run compare --first 4 --second 10 --third 21; cd .." --count 9 --exact
+# CountCommandOutput --command "cd compare; poetry install; poetry run compare --first 4 --second 10 --third 21; cd .." --count 9 --exact
