@@ -1,7 +1,7 @@
 # Number Comparison
 
-## Assigned: Friday, September 10, 2021
-## Due: Monday, September 13, 2021
+## Assigned: Wednesday, March 16, 2022
+## Due: Wednesday, March 30, 2022
 
 After cloning this repository to your computer, please take the following steps:
 
@@ -13,6 +13,8 @@ After cloning this repository to your computer, please take the following steps:
   - `poetry run compare --first 4 --second 10 --third 20`
   - `poetry run compare --first 4 --second 10 --third 21`
   - Please note that the program will not work unless you add the required source code
+- As you complete this project, please regularly commit to your repository
+- Use descriptive commit messages that explain the way you change your repository's contents
 - Confirm that the program is producing the expected output
 - Use a `docker run` command for your operating system to run GatorGrader
 - Provide all of the required responses in the `writing/reflection.md` file
