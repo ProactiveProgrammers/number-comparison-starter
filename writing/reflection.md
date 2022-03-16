@@ -1,5 +1,9 @@
 # Number Comparison
 
+TODO: Make sure that you delete all of the TODO markers inside of this file and
+either remove or rewrite the prompts. When you are finished with this reflection
+it should contain professional writing that is suitable for publishing.
+
 ## Add Your Name Here
 
 ## Program Output
@@ -32,9 +36,13 @@ TODO: Write at least one paragraph to explain the request source code
 
 TODO: Refer to page 25 of the textbook and compare your function to the two blocks of code.
 
-##### TODO: Compare to the 16 line code block on page 25. Which do you prefer? Why?
+##### Compared to the 16-line code block on page 25. Which do you prefer? Why?
 
-##### TODO: Compare to the 8 line code block on page 25. Which do you prefer? Why?
+TODO: Provide a one-paragraph response that answers this question in your own words.
+
+##### Compare to the 8-line code block on page 25. Which do you prefer? Why?
+
+TODO: Provide a one-paragraph response that answers this question in your own words.
 
 ### What was the greatest challenge that you faced when completing this assignment?
 
