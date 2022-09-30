@@ -1,5 +1,9 @@
 """Perform number comparison to find the largest odd number."""
 
+# TODO: make sure that you resolve all of the TODO markers inside
+# of this file. Once you are done with a TODO marker you should
+# either delete it and rewrite the comment or delete the entire comment
+
 from typing import Tuple
 
 import typer
