@@ -1,0 +1,142 @@
+setup: |
+  cd compare && poetry install
+  echo "Done installing project dependencies!"
+---
+
+# Reminder for ^^^:
+# All commands executed in the setup block are done in a
+# one-by-one fashion from the current working directory. This means
+# that there is no history associated with running the commands and
+# thus multiple commands must be run in a single chain.
+
+# perform checks on a file
+- compare/compare/main.py:
+    - description: Ensure that the main.py file exists in the compare/compare/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for main.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Define the get_minimum function in main.py
+      check: MatchFileFragment
+      options:
+        fragment: "def get_minimum("
+        count: 1
+        exact: true
+    - description: Call the get_minimum function and save return value in answer in main.py
+      check: MatchFileFragment
+      options:
+        fragment: "answer = get_minimum("
+        count: 1
+        exact: true
+    - description: Create a sufficient number of docstring (i.e., multiple-line) comments in main.py
+      check: CountMultipleLineComments
+      options:
+        language: "Python"
+        count: 3
+        exact: false
+    - description: Create a sufficient number of single-line comments in main.py
+      check: CountSingleLineComments
+      options:
+        language: "Python"
+        count: 10
+        exact: false
+
+# perform checks on a file
+- compare/tests/test_compare.py:
+    - description: Ensure that the test_compare.py file exists in the compare/tests/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for main.py
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Create a sufficient number of docstring (i.e., multiple-line) comments in main.py
+      check: CountMultipleLineComments
+      options:
+        language: "Python"
+        count: 5
+        exact: false
+
+# run the program and confirm correct number of lines in the output
+- description: Run the program and confirm the correct number of non-blank lines in the output
+  check: CountCommandOutput
+  options:
+    command: 'cd compare && poetry run compare --first 4 --second 10 --third 21'
+    count: 6
+    exact: true
+
+# run a command
+- description: Pass the source code formatting checks run by black
+  command: cd compare && poetry run task black
+
+# run a command
+- description: Pass the linting checks run by flake8
+  command: cd compare && poetry run task flake8
+
+# run a command
+- description: Pass the import checks run by isort
+  command: cd compare && poetry run task isort
+
+# run a command
+- description: Pass the linting checks run by mypy
+  command: cd compare && poetry run task mypy
+
+# run a command
+- description: Pass the linting checks run by pydocstyle
+  command: cd compare && poetry run task pydocstyle
+
+# run a command
+- description: Pass the linting checks run by pylint
+  command: cd compare && poetry run task pylint
+
+# run a command
+- description: Pass the linting checks run by pymarkdown
+  command: cd compare && poetry run task markdownlint
+
+# run a command
+- description: Pass all of the Pytest test cases
+  command: cd compare && poetry run task test
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum of commits in repository
+  check: CountCommits
+  options:
+    count: 10
+
+# perform checks on a file
+- writing/reflection.md:
+    - description: Ensure that the reflection.md file exists in the writing/ directory
+      check: ConfirmFileExists
+    - description: Complete all TODOs, remove the TODO markers, and rewrite comments for the reflection
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the reflection file
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+    - description: Write a minimum number of meaningful words in the reflection
+      check: CountFileWords
+      options:
+        count: 400
+        exact: false
+    - description: Confirm that the markdown file has the correct number of headers
+      check: CountMarkdownTags
+      options:
+        tag: heading
+        count: 13
+        exact: false
+    - description: Confirm that the markdown file has the correct number of fenced code blocks
+      check: CountMarkdownTags
+      options:
+        tag: code_block
+        count: 4
+        exact: false
