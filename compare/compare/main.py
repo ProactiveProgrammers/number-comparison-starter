@@ -54,4 +54,4 @@ def compare(
     console = Console()
     # TODO: create program output that exactly matches the expected
     # output on the ProactiveProgrammers web site! You can search
-    # for the name of this project which is called "Comparing Numbers"
+    # for the name of this project which is called "Number Comparison"
