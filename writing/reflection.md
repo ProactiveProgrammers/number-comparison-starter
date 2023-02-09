@@ -44,6 +44,8 @@ TODO: Provide a one-paragraph response that answers this question in your own wo
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
+## Professional Development
+
 ### What was the greatest challenge that you faced when completing this assignment?
 
 TODO: Provide a one-paragraph response that answers this question in your own words.
