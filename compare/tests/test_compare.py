@@ -4,6 +4,14 @@ from compare import __version__
 
 from compare import main
 
+# TODO: Make sure that you read and understand all of the test cases inside of
+# this test suite. You should be able to identify the following parts of a test:
+# --> function under test
+# --> input to the function under test
+# --> output of the function under test
+# --> assertion involved the output of the function under test and the test
+# oracle (note that these are encoded in assert statements)
+
 
 def test_version():
     """Confirm that the version of the program is correct."""
