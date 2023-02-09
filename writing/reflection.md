@@ -27,7 +27,7 @@ TODO: Use a fenced code block to provide the output for this command.
 TODO: Use a fenced code block to provide the requested source code
 TODO: Write at least one paragraph to explain the request source code
 
-#### A function that returns the both largest odd and a boolean diagnostic flag
+#### A function that returns both largest odd and a boolean diagnostic flag
 
 TODO: Use a fenced code block to provide the requested source code
 TODO: Write at least one paragraph to explain the request source code
@@ -35,13 +35,16 @@ TODO: Write at least one paragraph to explain the request source code
 #### Compare and contrast your implementation of `get_largest_odd` to those on page 25 of the textbook
 
 TODO: Refer to page 25 of the textbook and compare your function to the two blocks of code.
+TODO: You will provide an answer to this question by answering the following sub-questions.
 
 ##### Compared to the 16-line code block on page 25. Which do you prefer? Why?
 
+TODO: Refer to page 25 of the textbook and compare your function to code in the textbook.
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
 ##### Compare to the 8-line code block on page 25. Which do you prefer? Why?
 
+TODO: Refer to page 25 of the textbook and compare your function to code in the textbook.
 TODO: Provide a one-paragraph response that answers this question in your own words.
 
 ## Professional Development
